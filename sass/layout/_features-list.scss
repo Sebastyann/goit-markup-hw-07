@@ -1,4 +1,4 @@
-.work-list {
+.employees-work__list {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -7,7 +7,7 @@
   color: var(--title-text-color);
 }
 
-.features-item {
+.employees__text {
   line-height: 1.7;
   color: var(--primary-text-color);
 }
@@ -16,17 +16,17 @@
   display: flex;
 }
 
-.employees-card:nth-child(4n) {
-  margin-right: 0;
-}
-.employees-card:nth-child( n + 4) {
-  margin-right: 0;
-}
-.employees-card {
+.employees__card {
   margin-right: 30px;
-}
 
-.thumb-icon {
+&:nth-child(4n) {
+  margin-right: 0;
+}
+&:nth-child( n + 4) {
+  margin-right: 0;
+}}
+
+.employees-thumb__icon {
   display: flex;
   align-items: center;
   justify-content: center;

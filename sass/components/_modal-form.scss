@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .date-com {
   display: block;
   width: 100%;
@@ -30,7 +31,13 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--timing-function);
-}
+
+&:focus {
+  outline: none;
+  border-color: var(--primery-accent-color);
+}}
+
+
 .label-span-model {
   display: block;
   font-weight: 400;
@@ -46,21 +53,15 @@
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color var(--timing-function);
-}
 
-.input-date:focus + .icon {
+&:focus {
+  outline: none;
+  border-color: var(--primery-accent-color);
+ } 
+&:focus + .icon {
   fill: var(--primery-accent-color);
-}
+}}
 
-.input-date:focus {
-  outline: none;
-  border-color: var(--primery-accent-color);
-}
-
-.date-com:focus {
-  outline: none;
-  border-color: var(--primery-accent-color);
-}
 
 .modal-form-input-wrapper {
   position: relative;

@@ -1,4 +1,4 @@
-.model-open-but {
+.hero-model-open-but {
   display: inline-block;
   text-align: center;
   padding: 10px 32px;
@@ -14,9 +14,8 @@
   background-color: var(--primery-accent-color);
   color: var(--secondaty-bg-color);
   transition-duration: 250ms var(--timing-function);
-}
 
-.model-open-but:hover,
-.model-open-but:focus {
+&:hover,
+&:focus {
   background-color: #188ce8;
-}
+}}

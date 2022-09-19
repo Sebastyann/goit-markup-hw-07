@@ -27,8 +27,8 @@
   cursor: pointer;
   transition-duration: 250ms var(--timing-function),
     fill 250ms var(--timing-function);
-}
-.modal-close-btn:focus,
-.modal-close-btn:hover {
+
+&:focus,
+&:hover {
   fill: var(--primery-accent-color);
-}
+}}

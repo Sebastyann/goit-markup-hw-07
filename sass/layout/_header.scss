@@ -12,13 +12,11 @@
   display: flex;
   align-items: center;
 }
-
-.site-nav.list {
+.site-nav__list {
   display: flex;
   column-gap: 50px;
   margin-right: auto;
 }
-
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -30,15 +28,15 @@
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition: color 250ms var(--timing-function);
-}
-.site-nav .link:focus,
-.site-nav .link:hover,
-.site-nav .link:active {
+
+&:focus,
+&:hover,
+&:active {
   color: var(--primery-accent-color);
 }
-.site-nav .link.current {
+&.current {
   color: var(--primery-accent-color);
-}
+}}
 
 .contacts-nav.list {
   display: flex;
@@ -49,10 +47,7 @@
   letter-spacing: 0.02em;
 }
 
-.contacts-nav .link:focus,
-.contacts-nav .link:hover {
-  color: var(--primery-accent-color);
-}
+
 .contacts-nav .link {
   display: flex;
   align-items: center;
@@ -61,24 +56,25 @@
   padding-bottom: 32px;
   color: var(--primary-text-color);
   transition: color 250ms var(--timing-function);
-}
 
-.mail .list {
-  margin-right: 50px;
-}
+&:focus,
+&:hover {
+  color: var(--primery-accent-color);
+}}
+
 .mail.list-footer {
   list-style: none;
   margin-bottom: 9px;
 }
-.mail.list {
+.site-nav__mail {
   margin-right: 50px;
 }
-.menu-link {
+.site-nav__link {
   position: relative;
   display: block;
   color: currentColor;
 }
-.menu-link::after {
+.site-nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -94,7 +90,7 @@
   opacity: 1;
   bottom: -1px;
 }
-.contact-icon-item {
+.site-nav__icon {
   align-items: center;
   justify-content: center;
   margin-right: 10px;

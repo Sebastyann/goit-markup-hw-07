@@ -13,12 +13,12 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
-}
-.company-list:hover,
-.company-list:focus {
+
+&:hover,
+&:focus {
   border-color: var(--primery-accent-color);
-}
-.company-icon {
+}}
+.company__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,8 +27,8 @@
   color: #afb1b8;
   fill: currentColor;
   transition: fill 250ms var(--timing-function);
-}
-.company-icon.link:hover,
-.company-icon.link:focus {
+
+&:hover,
+&:focus {
   fill: var(--primery-accent-color);
-}
+}}

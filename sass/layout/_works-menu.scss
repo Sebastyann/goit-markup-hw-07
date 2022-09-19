@@ -23,11 +23,11 @@
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
-}
-.model-open-button:hover,
-.model-open-button:focus {
+
+&:hover,
+&:focus {
   color: var(--primary-bg-color);
   background: var(--primery-accent-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-}
+}}
 
